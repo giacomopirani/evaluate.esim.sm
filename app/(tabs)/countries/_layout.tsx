@@ -1,0 +1,25 @@
+import {
+  supportsHeaderLargeTitle,
+  supportsHeaderTransparent,
+} from "@/lib/utils";
+import { Stack } from "expo-router";
+
+export default function CountriesLayout() {
+  return (
+    <Stack
+      screenOptions={{
+        headerBackButtonDisplayMode: "default",
+        headerBackButtonMenuEnabled: true,
+      }}
+    >
+      <Stack.Screen
+        name="index"
+        options={{
+          title: "Countries",
+          headerLargeTitle: supportsHeaderLargeTitle(),
+          headerTransparent: supportsHeaderTransparent(),
+        }}
+      />
+    </Stack>
+  );
+}
