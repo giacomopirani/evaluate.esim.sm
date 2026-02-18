@@ -20,6 +20,13 @@ export default function CountriesLayout() {
           headerTransparent: supportsHeaderTransparent(),
         }}
       />
+      <Stack.Screen
+        name="[id]"
+        options={{
+          title: "Details",
+          headerBackButtonDisplayMode: "default",
+        }}
+      />
     </Stack>
   );
 }
