@@ -1,7 +1,3 @@
-import {
-  supportsHeaderLargeTitle,
-  supportsHeaderTransparent,
-} from "@/lib/utils";
 import { Stack } from "expo-router";
 
 export default function HomepageLayout() {
@@ -16,8 +12,8 @@ export default function HomepageLayout() {
         name="index"
         options={{
           title: "Homepage",
-          headerLargeTitle: supportsHeaderLargeTitle(),
-          headerTransparent: supportsHeaderTransparent(),
+          headerLargeTitle: false,
+          headerTransparent: false,
         }}
       />
     </Stack>

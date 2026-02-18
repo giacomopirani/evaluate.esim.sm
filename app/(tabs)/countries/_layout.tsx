@@ -1,7 +1,3 @@
-import {
-  supportsHeaderLargeTitle,
-  supportsHeaderTransparent,
-} from "@/lib/utils";
 import { Stack } from "expo-router";
 
 export default function CountriesLayout() {
@@ -16,8 +12,8 @@ export default function CountriesLayout() {
         name="index"
         options={{
           title: "Countries",
-          headerLargeTitle: supportsHeaderLargeTitle(),
-          headerTransparent: supportsHeaderTransparent(),
+          headerLargeTitle: false,
+          headerTransparent: false,
         }}
       />
       <Stack.Screen
